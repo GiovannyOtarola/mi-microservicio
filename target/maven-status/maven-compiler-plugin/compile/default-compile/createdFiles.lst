@@ -1,1 +1,5 @@
+com\miempresa\service\LibroService.class
+com\miempresa\repository\LibroRepository.class
+com\miempresa\controller\LibroController.class
 com\miempresa\App.class
+com\miempresa\model\Libro.class
