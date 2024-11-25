@@ -35,13 +35,4 @@ public class LibroService {
         libroRepository.deleteById(id);
     }
 
-    public Optional<Libro> actualizarLibro(Long id, Libro libroDetalles) {
-        return libroRepository.findById(id).map(libroExistente -> {
-            libroExistente.setTitulo(libroDetalles.getTitulo());
-            libroExistente.setAutor(libroDetalles.getAutor());
-            libroExistente.setGenero(libroDetalles.getGenero());
-            libroExistente.setAnioPublicacion(libroDetalles.getAnioPublicacion());
-            return libroRepository.save(libroExistente); 
-        });
-    }
 }
